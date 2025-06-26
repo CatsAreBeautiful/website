@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>root@catsarebeautiful.de</title>
+    <style>
+      :root {
+        --bg: #0d0d0d;
+        --fg: #e0e0e0;
+        --accent: #7fffd4;
+        --heading: #ffb347;
+        --hover: #ffa07a;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: monospace;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        margin-bottom: 2rem;
+      }
+
+      nav a {
+        color: var(--accent);
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s ease;
+        white-space: nowrap;
+      }
+
+      nav a:hover {
+        color: var(--hover);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--heading);
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        color: var(--accent);
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+
+      li a {
+        color: var(--accent);
+        text-decoration: underline;
+        transition: color 0.2s ease;
+      }
+
+      li a:hover {
+        color: var(--hover);
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        nav a {
+          margin: 0 0.5rem;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Thanks to Kira -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+      <h1>Welcome to<br>catsarebeautiful.de</h1>
+      <h2>Private frontends</h2>
+      <ul>
+        <li><a href="https://search.catsarebeautiful.de">SearXNG</a></li>
+        <li><a href="https://redlib.catsarebeautiful.de">Redlib</a></li>
+        <li><a href="https://proxitok.catsarebeautiful.de">Proxitok</a></li>
+        <li><a href="https://overflow.catsarebeautiful.de">AnonymousOverflow</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
